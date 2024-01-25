@@ -1,0 +1,58 @@
+
+
+h1{
+    font-size: 3rem;
+}
+
+.container{
+    /* box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    width: 350px; */
+}
+input{
+    background-color: rgb(255, 244, 230);
+    padding: 0.3rem 1rem;
+    border: none;
+}
+
+button{
+    padding: 0.3rem 1rem;
+    border: none;
+    background-color: cadetblue;
+}
+
+li{
+    font-size: 1.2rem;
+}
+
+
+.toggle{
+    margin: 20px 10px;
+
+    width: 70px;
+    height: 30px;
+    background-color: dodgerblue;
+    border-radius: 15px;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.5s;
+    background-image: url(right-arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.circle.active{
+    transform: translateX(40px);
+    background-color: crimson;
+    background-image: url(arrow-right.png);
+}
+
+.toggle.active{
+    background-color: black;
+}
+

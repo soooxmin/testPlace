@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list1</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<body>
+    
+    <h1>todos</h1>
+    <div class="container">
+        <input type="text" id="input" placeholder="enter the text">
+        <button id="btn">+</button>
+        <div id="todos" class="todos"></div>
+    </div>
+
+    <div class="toggle">
+        <div class="circle"></div>
+    </div>
+
+
+    <!-- <script src="script.js"></script> -->
+    <script>
+
+
+        $(".circle").click(function () {
+
+            var circle = $(".circle");
+            var toggle = $(".toggle");
+
+            if( circle.hasClass('active')){
+                circle.removeClass('active');
+                toggle.removeClass('active');
+            }else{
+                circle.addClass('active');
+                toggle.addClass('active');
+            }
+            
+        })
+
+        
+
+    </script>
+</body>
+</html>
