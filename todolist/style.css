@@ -1,14 +1,14 @@
 
 
-h1{
+/*h1{
     font-size: 3rem;
 }
 
-.container{
-    /* box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
-    width: 350px; */
-}
-input{
+/*.container{
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    width: 350px; 
+}*/
+/*input{
     background-color: rgb(255, 244, 230);
     padding: 0.3rem 1rem;
     border: none;
@@ -54,5 +54,63 @@ li{
 
 .toggle.active{
     background-color: black;
+} */
+
+
+
+/************************************************************/
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+h1{
+    font-size: 5rem;
+}
+
+.container{
+    display: flex;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
+}
+
+.txt{
+    font-size: 1.5rem;
+    padding: 0.2rem 0.5rem;
+    border: none;
+}
+.txt::placeholder{
+    font-size: 0.8rem;
+    color: #555;
+}
+
+button{
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border:none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+    font-size: 1.5rem;
+    color: #262626;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 

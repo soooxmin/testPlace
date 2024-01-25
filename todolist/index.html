@@ -8,8 +8,17 @@
 <link rel="stylesheet" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <body>
-    
+
     <h1>todos</h1>
+
+    <div class="container">
+        <input type="text" placeholder="enter the text" id="txt" class="txt">
+        <button id="btn">+</button>
+        
+    </div>
+    <div class="todos" id="todos"></div>
+
+    <!-- <h1>todos</h1>
     <div class="container">
         <input type="text" id="input" placeholder="enter the text">
         <button id="btn">+</button>
@@ -18,27 +27,27 @@
 
     <div class="toggle">
         <div class="circle"></div>
-    </div>
+    </div> -->
 
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
     <script>
 
 
-        $(".circle").click(function () {
+        // $(".circle").click(function () {
 
-            var circle = $(".circle");
-            var toggle = $(".toggle");
+        //     var circle = $(".circle");
+        //     var toggle = $(".toggle");
 
-            if( circle.hasClass('active')){
-                circle.removeClass('active');
-                toggle.removeClass('active');
-            }else{
-                circle.addClass('active');
-                toggle.addClass('active');
-            }
+        //     if( circle.hasClass('active')){
+        //         circle.removeClass('active');
+        //         toggle.removeClass('active');
+        //     }else{
+        //         circle.addClass('active');
+        //         toggle.addClass('active');
+        //     }
             
-        })
+        // })
 
         
 
