@@ -1,4 +1,25 @@
+let txt = document.getElementById('txt');
+let btn = document.getElementById('add');
+let todos = document.getElementById('todos');
 
+btn.addEventListener('click',function (){
+    var list = document.createElement('li');
+    if(!txt.value){
+        alert('none');
+    }else{
+        list.ineerText =txt.value;
+        todos.appendChild(list);
+        txt.value ="";
+    }
+
+    list.addEventListener('click',function (){
+        list.style.textDecoration = 'line-through';
+    })
+    list.addEventListener('dblclick',function (){
+        todos.removeChild(list);
+    })
+    
+})
 
 
 
@@ -32,31 +53,31 @@
 
 
 
-let txt = document.getElementById('txt');
-let btn = document.getElementById('btn');
-let todos = document.getElementById('todos');
+// let txt = document.getElementById('txt');
+// let btn = document.getElementById('btn');
+// let todos = document.getElementById('todos');
 
-btn.addEventListener('click', function () {
+// btn.addEventListener('click', function () {
     
-    var list = document.createElement('li');
+//    var list = document.createElement('li');
 
-    if(!txt.value){
-        alert('enter the text :)');
-        // console.log("dfasdf");
-    }else{
-        list.innerText = txt.value;
-        todos.appendChild(list);
-        txt.value = "";
-    }
+//    if(!txt.value){
+//        alert('enter the text :)');
+//        // console.log("dfasdf");
+//   }else{
+//        list.innerText = txt.value;
+//        todos.appendChild(list);
+//        txt.value = "";
+//    }
 
-    list.addEventListener('click',function () {
-        list.style.textDecoration ='line-through';
-    })
-    list.addEventListener('dblclick',function () {
-        todos.removeChild(list);
-    })
+//    list.addEventListener('click',function () {
+//        list.style.textDecoration ='line-through';
+//    })
+//    list.addEventListener('dblclick',function () {
+//        todos.removeChild(list);
+//    })
 
-})
+// })
 
 
 
